@@ -49,7 +49,7 @@ const Cart = () => {
 
 
     return (
-        <Base title="Cart Page" description="Ready to CheckOut">
+        <Base title="Cart Page" description="Ready to CheckOut" className="text-dark">
             <div className="row  text-center">
                 <div className="col-md-6 mb-4">{
 

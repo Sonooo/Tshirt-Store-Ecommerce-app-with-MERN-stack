@@ -30,7 +30,7 @@ const Card = ({ product, addtoCart = true, removeFromCart = false, setreload = f
 
                 <button
                     onClick={addToCart}
-                    className="btn btn-block btn-outline-success mt-2 mb-2"
+                    className="btn btn-block btn-success mt-2 mb-2"
                 >
                     Add to Cart
                 </button>
@@ -59,12 +59,12 @@ const Card = ({ product, addtoCart = true, removeFromCart = false, setreload = f
 
 
     return (
-        <div className="card text-white bg-dark border border-info ">
+        <div className="card text-white border border-light " style={{background : "#0D0D0D", borderRadius : "4%"}}>
             <div className="card-header lead">{cartTitle}</div>
             <div className="card-body">
                 {getARedirect(redirect)}
                 < Imagehelper product={product} />
-                <p className="lead bg-success font-weight-normal text-wrap">
+                <p className="lead font-weight-normal text-wrap">
                     {cartDescription}
                 </p>
                 <p className="btn btn-success rounded  btn-sm px-4">$ {cartPrice}</p>

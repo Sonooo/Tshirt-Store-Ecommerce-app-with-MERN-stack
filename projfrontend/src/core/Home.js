@@ -5,7 +5,6 @@ import Base from "./Base";
 import Card from "./Card";
 import { getProducts } from "./helper/coreapicalls";
 
-
 export default function Home() {
 
 
@@ -31,13 +30,14 @@ export default function Home() {
 
   return (
     <Base title="Home Page" description="welcome to the tshirt store">
+
+      <br />
       <div className="row text-center">
-        <h1 className="text-white">All of tshirts</h1>
         <div className="row">
 
           {products.map((product, index) => {
             return (
-              <div key={index} className="col-md-3 mb-4">
+              <div key={index} className="col-md-4 mb-4">
                 <Card product={product} />
 
               </div>

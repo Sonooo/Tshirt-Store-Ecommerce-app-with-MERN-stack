@@ -88,8 +88,8 @@ const AdminDashBoard = () => {
             className="container bg-success p-4"
         >
             <div className="row">
-                <div className="col-3">{adminLeftSide()}</div>
-                <div className="col-9">{adminRightSide()}</div>
+                <div className="col-md-4 mb-4">{adminLeftSide()}</div>
+                <div className="col-md-8 mb-4">{adminRightSide()}</div>
 
 
             </div>
